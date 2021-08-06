@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_col">
+
+    <LinearLayout
+        android:id="@+id/topBar3"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/quest3_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center|center_vertical"
+        android:text="03\nFill in the blanks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar3" />
+
+    <TextView
+        android:id="@+id/extra3_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Click | Write the date and Destination"
+        android:textColor="@color/sub_col"
+        app:layout_constraintEnd_toEndOf="@+id/quest3_5"
+        app:layout_constraintStart_toStartOf="@+id/quest3_5"
+        app:layout_constraintTop_toBottomOf="@+id/quest3_5" />
+
+    <ImageView
+        android:id="@+id/prev3_5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar3"
+        app:srcCompat="@drawable/btn_prev" />
+
+    <ImageView
+        android:id="@+id/cmpl3_5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar3"
+        app:srcCompat="@drawable/btn_check" />
+
+    <LinearLayout
+        android:id="@+id/weekBtn_5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/day_5"
+        app:layout_constraintStart_toStartOf="@+id/day_5"
+        app:layout_constraintTop_toBottomOf="@+id/day_5">
+
+        <Button
+            android:id="@+id/sunBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="SUN"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/monBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="MON"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/tueBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="TUE"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/wedBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="WED"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/thuBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="THU"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/friBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="FRI"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/satBtn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="SAT"
+            android:textColor="@color/sub_col"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weekText_5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/weekBtn_5"
+        app:layout_constraintStart_toStartOf="@+id/weekBtn_5"
+        app:layout_constraintTop_toBottomOf="@+id/weekBtn_5">
+
+        <TextView
+            android:id="@+id/sunDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/monDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tueDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/wedDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/thuDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/friDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/satDate_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="08\n04"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day_5"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="First Date to receive"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra3_5" />
+
+    <EditText
+        android:id="@+id/details_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/destination_5"
+        app:layout_constraintStart_toStartOf="@+id/destination_5"
+        app:layout_constraintTop_toBottomOf="@+id/destination_5" />
+
+    <TextView
+        android:id="@+id/destination_5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Destination"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekText_5" />
+
+    <EditText
+        android:id="@+id/Sub_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Details"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/details_5"
+        app:layout_constraintStart_toStartOf="@+id/details_5"
+        app:layout_constraintTop_toBottomOf="@+id/details_5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Credit"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sub_5" />
+
+    <TextView
+        android:id="@+id/cardText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Number"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/cvcEdit5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cvcText5"
+        app:layout_constraintStart_toEndOf="@+id/cvcText5"
+        app:layout_constraintTop_toTopOf="@+id/cvcText5" />
+
+    <EditText
+        android:id="@+id/numEdit15"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardText5"
+        app:layout_constraintStart_toEndOf="@+id/cardText5"
+        app:layout_constraintTop_toTopOf="@+id/cardText5" />
+
+    <EditText
+        android:id="@+id/numEdit25"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numEdit15"
+        app:layout_constraintStart_toEndOf="@+id/numEdit15"
+        app:layout_constraintTop_toTopOf="@+id/numEdit15" />
+
+    <EditText
+        android:id="@+id/numEdit35"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numEdit25"
+        app:layout_constraintStart_toEndOf="@+id/numEdit25"
+        app:layout_constraintTop_toTopOf="@+id/numEdit25" />
+
+    <EditText
+        android:id="@+id/numEdit45"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numEdit35"
+        app:layout_constraintStart_toEndOf="@+id/numEdit35"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/validityText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Validity"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/cardText5"
+        app:layout_constraintTop_toBottomOf="@+id/cardText5" />
+
+    <TextView
+        android:id="@+id/passText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="password"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/validityText5"
+        app:layout_constraintTop_toBottomOf="@+id/validityText5" />
+
+    <EditText
+        android:id="@+id/passEdit5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:ems="4"
+        android:gravity="center"
+        android:hint="****"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/passText5"
+        app:layout_constraintStart_toEndOf="@+id/passText5"
+        app:layout_constraintTop_toTopOf="@+id/passText5" />
+
+    <TextView
+        android:id="@+id/cvcText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="CVC"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/passEdit5"
+        app:layout_constraintStart_toEndOf="@+id/dateEdit5"
+        app:layout_constraintTop_toBottomOf="@+id/numEdit15" />
+
+    <EditText
+        android:id="@+id/dateEdit5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="mm/yy"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/validityText5"
+        app:layout_constraintStart_toEndOf="@+id/validityText5"
+        app:layout_constraintTop_toTopOf="@+id/validityText5" />
+
+    <TextView
+        android:id="@+id/textView_5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="#4DFFFFFF"
+        android:text="your shippding date : "
+        app:layout_constraintEnd_toEndOf="@+id/weekText_5"
+        app:layout_constraintStart_toStartOf="@+id/weekText_5"
+        app:layout_constraintTop_toBottomOf="@+id/weekText_5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
