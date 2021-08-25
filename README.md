@@ -1,2 +1,2 @@
 # AglyUgri
-Imperfect produce direct trading platform
+The direct trading platform of imperfect produce
